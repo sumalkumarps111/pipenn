@@ -25,7 +25,7 @@ class AlgParams:
     datasetLabel = 'Biolip_N'
     dataset = DatasetParams.FEATURE_COLUMNS_BIOLIP_WIN
     
-    ONLY_TEST = True #False
+    ONLY_TEST = False
     USE_2D_MODEL = False
     NUM_BLOCK_REPEATS = 8 #8(73.44%,61.57%) #19(72.24%,61.54%)
     RNN_DIM = 128
