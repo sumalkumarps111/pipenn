@@ -208,7 +208,8 @@ def make1DRNNBlock2(x):
 def make1DModel():
     protImg = Input(shape=AlgParams.INPUT_SHAPE)
     x = protImg
-    
+    x = GRU(AlgParams.RNN_DIM, return_sequences=True)(x)
+    x = GRU(AlgParams.RNN_DIM, return_sequences=True)(x)    
     x = make1DConv(x, 3)
     for i in range(AlgParams.NUM_BLOCK_REPEATS):
         x = make1DResBlock(x)
