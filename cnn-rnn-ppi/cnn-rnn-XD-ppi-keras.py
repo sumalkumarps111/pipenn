@@ -22,7 +22,7 @@ class AlgParams:
     ALGRITHM_NAME = "cnn-rnn-ppi"
     DatasetParams.USE_COMET = False #True
     
-    datasetLabel = 'Biolip_N'
+    datasetLabel = 'Biolip_A'
     dataset = DatasetParams.FEATURE_COLUMNS_BIOLIP_WIN
     
     ONLY_TEST = False
